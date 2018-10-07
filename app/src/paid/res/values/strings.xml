@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greeting">Welcome to the paid version!</string>
+    <string name="app_name">Flavor Specific Activity - Paid</string>
+    <string name="title_activity_joke">JokeActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
