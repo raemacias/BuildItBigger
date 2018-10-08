@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.udacity.gradle.jokes.Joker;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,10 +28,15 @@ public class JokeActivityFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_joke, container, false);
         Intent intent = getActivity().getIntent();
         String joke = intent.getStringExtra(JokeActivity.JOKE_KEY);
-        TextView jokeTextView = root.findViewById(R.id.joke_textview);
-        if (joke != null && joke.length() != 0) {
-            jokeTextView.setText(joke);
-        }
+//        TextView jokeTextView = root.findViewById(R.id.joke_textview);
+//        if (joke != null && joke.length() != 0) {
+//            jokeTextView.setText(joke);
+//        }
+
+
+        TextView textView = root.findViewById(R.id.joke_textview);
+        Joker myJoker = new Joker();
+        textView.setText(myJoker.getJoke());
 
         return root;
     }

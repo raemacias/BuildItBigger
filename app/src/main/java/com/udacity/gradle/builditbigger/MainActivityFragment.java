@@ -5,9 +5,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.udacity.gradle.jokes.Joker;
 
 
 /**
@@ -22,6 +24,11 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
+
+        //this shows the joke before the button is pushed - wrong!
+//        TextView textView = root.findViewById(R.id.text_view);
+//        Joker myJoker = new Joker();
+//        textView.setText(myJoker.getJoke());
 
 
         AdView mAdView = root.findViewById(R.id.adView);
@@ -39,6 +46,4 @@ public class MainActivityFragment extends Fragment {
 //    }
 }
 
-//    TextView textView = root.findViewById(R.id.text_view);
-//        Joker myJoker = new Joker();
-//        textView.setText(myJoker.getJoke());
+
