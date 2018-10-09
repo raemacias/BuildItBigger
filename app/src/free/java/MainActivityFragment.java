@@ -36,11 +36,5 @@ public class MainActivityFragment extends Fragment {
         mAdView.loadAd(adRequest);
         return root;
     }
-
-//    public void tellJoke(View view) {
-//    }
 }
 
-//    TextView textView = root.findViewById(R.id.text_view);
-//        Joker myJoker = new Joker();
-//        textView.setText(myJoker.getJoke());
