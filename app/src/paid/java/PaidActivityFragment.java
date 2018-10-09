@@ -18,18 +18,18 @@ import com.google.android.gms.ads.AdView;
  */
 
 //paid activity has no ads
-public class MainActivityFragment extends Fragment {
+public class PaidActivityFragment extends Fragment {
 
-    public MainActivityFragment() {
+    public PaidActivityFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
-        TextView textView = root.findViewById(R.id.text_view);
-        Joker myJoker = new Joker();
-        textView.setText(myJoker.getJoke());
+//        TextView textView = root.findViewById(R.id.text_view);
+//        Joker myJoker = new Joker();
+//        textView.setText(myJoker.getJoke());
 
 //        AdView mAdView = root.findViewById(R.id.adView);
 //        // Create an ad request. Check logcat output for the hashed device ID to
